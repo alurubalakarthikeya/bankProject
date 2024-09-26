@@ -15,26 +15,28 @@
             padding: 0;
             font-family: "Raleway", sans-serif;
             scroll-behavior: smooth;
+            box-sizing: border-box;
         }
 
         h1 {
-            font-size: 4vh;
-            margin: 10px 30px;
+            font-size: 5vh; 
+            margin: 10px;
         }
 
         h3 {
             font-size: 3vh;
+            margin: 0;
         }
 
         h4 {
-            font-size: 2vh;
-            padding: 10px 30px;
+            font-size: 2.5vh;
+            padding: 10px;
         }
 
         button {
             background: white;
             border: 1px solid black;
-            padding: 20px;
+            padding: 2vh 4vw; /* Using responsive padding */
             border-radius: 10px;
             font-weight: 600;
             transition: 0.6s;
@@ -55,45 +57,50 @@
             text-align: center;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 10px;
         }
 
-        .intro {
-            padding: 10px;
-            text-align: justify;
+        .container {
+            width: 90%;
+            max-width: 1200px;
         }
 
+        .intro,
         .exo-one {
-            padding: 10px;
+            padding: 10% 10%;
             text-align: justify;
-            margin-bottom: 40px;
         }
 
         img {
             width: 100%;
-            max-width: 380px;
-            display: flex;
-            margin: 0 10px 10px 10px ;
+            display: block;
+            margin: 20px 0;
         }
 
         .img-left {
             float: left;
+            margin-right: 5%;
+            width: 100%;
         }
 
         .img-right {
             float: right;
+            margin-left: 5%;
+            width: 100%;
         }
 
         p {
-            margin: 20px;
+            margin: 10px;
         }
 
         video {
-            max-width: 380px;
-            float: left;
-            margin: 5px 15px;
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
         }
     </style>
 </head>
@@ -154,13 +161,17 @@
     </div>
     <div class="exo-one">
         <h3>Some video content</h3>
-    <video autoplay loop>
+    <video autoplay loop controls>
         <source src="https://cdn.pixabay.com/video/2024/06/09/216038_large.mp4" >
     </video>
     <p>This is the video taken from the pixabay which shows an exoplanet with water content in it. An exoplanet or extrasolar planet is a planet outside the Solar System. The first possible evidence of an exoplanet was noted in 1917 but was not then recognized as such. The first confirmation of the detection occurred in 1992. A different planet, first detected in 1988, was confirmed in 2003. According to statistics from the NASA Exoplanet Archive, As of 19 September 2024, there are 5,759 confirmed exoplanets in 4,300 planetary systems, with 963 systems having more than one planet.[3][4] The James Webb Space Telescope (JWST) is expected to discover more exoplanets, and to give more insight into their traits, such as their composition, environmental conditions, and potential for life. There are many methods of detecting exoplanets. Transit photometry and Doppler spectroscopy have found the most, but these methods suffer from a clear observational bias favoring the detection of planets near the star; thus, 85% of the exoplanets detected are inside the tidal locking zone.[6] In several cases, multiple planets have been observed around a star.[7] About 1 in 5 Sun-like stars[a] have an "Earth-sized"[b] planet in the habitable zone.[c][8][9] Assuming there are 200 billion stars in the Milky Way,[d] it can be hypothesized that there are 11 billion potentially habitable Earth-sized planets in the Milky Way, rising to 40 billion if planets orbiting the numerous red dwarfs are included.</p><br>
+    <h3>Audio Sample: </h3><br>
+    <audio controls autoplay>
+        <source src="https://stsci-opo.org/STScI-01HZJ34S60P888M5SAYGVCHRFR.mp3">
+    </audio>
     </div>
     <footer>
-        <p style="text-align: center;">@developed by Aluru Bala Karthikeya</p>
+        <p style="text-align: center;">@developed by Karthikeya</p>
     </footer>
 </body>
 </html>
