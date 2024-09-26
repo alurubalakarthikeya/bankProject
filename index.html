@@ -14,6 +14,7 @@
             margin: 0;
             padding: 0;
             font-family: "Raleway", sans-serif;
+            scroll-behavior: smooth;
         }
 
         h1 {
@@ -71,16 +72,28 @@
         }
 
         img {
-            float: left;
             width: 100%;
             max-width: 380px;
             display: flex;
-            margin: 0 auto;
-            margin-bottom: 10px;
+            margin: 0 10px 10px 10px ;
+        }
+
+        .img-left {
+            float: left;
+        }
+
+        .img-right {
+            float: right;
         }
 
         p {
             margin: 20px;
+        }
+
+        video {
+            max-width: 380px;
+            float: left;
+            margin: 5px 15px;
         }
     </style>
 </head>
@@ -90,10 +103,10 @@
         <div class="container">
             <h1>Oceans and water</h1>
             <h4>Learn about water resources on exo-planets</h4>
-            <button>Know more</button>
+            <a href="#intro"><button>Know more</button></a>
         </div>
     </header>
-    <div class="intro">
+    <div id="intro" class="intro">
         <h2>Introduction: </h2>
         <p>In our universe, where water is a fundamental resource. Oceans play a crucial role in maintaining life on
             Earth. They provide essential habitats, food sources, and protection from harmful chemicals. Understanding
@@ -102,8 +115,14 @@
                 generations."</mark> <br><br> - Unknown </blockquote>
     </div>
     <div class="exo-one">
-        <h3>Exoplanet 1 <b>Kepler-138 c</b></h3>
-        <img src="https://eyes.nasa.gov/apps/exo/assets/image/thumbnail/exoplanet/superearth.webp" alt="kepler">
+        <h3>Exoplanet 1 <b>TOI-1452 b</b></h3>
+        <img class="img-right" src="https://static.euronews.com/articles/stories/06/97/97/98/1440x810_cmsv2_6e2be16c-bd67-5ee0-8d9f-d3d471a69415-6979798.jpg" alt="kepler">
+        <p>The TOI-1452 star system is 99 light-years away from Earth,[5] located in the constellation of Draco. It is a binary pair of dim red dwarf stars separated by only 96 astronomical units (AU). A notable feature of this system is the presence of an exoplanet around one of the stars, designated as TOI-1452 b.[6] It is two M4 dwarf stars that were observed by TESS as a priority, since they are on the cool dwarf list, a list of high-priority orange-red and red dwarf stars, that was uploaded to TESS. It is a flare star, with a flare observed by TESS where the star brightened by 5%. The secondary star is often distinguished from the first with the name "TOI-1760".[7] TOI-1452 b was discovered by an international team led by astronomers from the Université de Montréal,[8][9] using data from NASA’s Transiting Exoplanet Survey Satellite (TESS).[1][10] The discovery was first reported in June 2022.[1]</p>
+        <blockquote>"TOI-1452 b is a super Earth exoplanet that orbits an M-type star. Its mass is 4.82 Earths, it takes 11.1 days to complete one orbit of its star, and is 0.061 AU from its star. Its discovery was announced in 2022." <br> <b>- NASA</b></blockquote>
+    </div>
+    <div class="exo-one">
+        <h3>Exoplanet 2 <b>Kepler-138 c</b></h3>
+        <img class="img-left" src="https://eyes.nasa.gov/apps/exo/assets/image/thumbnail/exoplanet/superearth.webp" alt="kepler">
         <p>Kepler-138, also known as KOI-314, is a red dwarf located in the constellation Lyra, <b>219 light years from
                 Earth</b>. It is located within the field of vision of the Kepler spacecraft, the satellite that NASA's
             Kepler Mission used to detect planets transiting their stars. The star hosts <mark> three confirmed planets
@@ -116,46 +135,32 @@
             announced in 2014." <br> <b>- NASA</b></blockquote>
     </div>
     <div class="exo-one">
-        <h3>Exoplanet 1 <b>Kepler-138 c</b></h3>
-        <img src="https://eyes.nasa.gov/apps/exo/assets/image/thumbnail/exoplanet/superearth.webp" alt="kepler">
-        <p>Kepler-138, also known as KOI-314, is a red dwarf located in the constellation Lyra, <b>219 light years from
-                Earth</b>. It is located within the field of vision of the Kepler spacecraft, the satellite that NASA's
-            Kepler Mission used to detect planets transiting their stars. The star hosts <mark> three confirmed planets
-                and a likely fourth</mark>, including the lowest-mass exoplanet with a measured mass and size discovered
-            to date, Kepler-138b, with a mass comparable to that of Mars. Kepler-138d is remarkable for its low density;
-            initially thought likely to be a gas dwarf,[8] more recent observations as of 2022 show that it, as well as
-            planet c, are likely to be ocean worlds.</p>
-        <blockquote>"Kepler-138 c is a super Earth exoplanet that orbits an M-type star. Its mass is 2.3 Earths, it
-            takes 13.8 days to complete one orbit of its star, and is 0.0913 AU from its star. Its discovery was
-            announced in 2014." <br> <b>- NASA</b></blockquote>
+        <h3>Exoplanet 3 <b>GJ 1214 b</b></h3>
+        <img class="img-left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5DVZy-7Ev9WYTWrsc75B5EzMKd4cYOhe9yw&s" alt="kepler">
+        <p>GJ 1214 b (sometimes Gliese 1214 b,[6] also named Enaiposha since 2023[2]) is an exoplanet that orbits the star GJ 1214, and was discovered in December 2009. Its parent star is 48 light-years from the Sun, in the constellation Ophiuchus. As of 2017, GJ 1214 b is the most likely known candidate for being an ocean planet.[1][7] For that reason, scientists often call the planet a "waterworld".[8]
+
+            It is a super-Earth, meaning it is larger than Earth but is significantly smaller (in mass and radius) than the gas giants of the Solar System. After CoRoT-7b, it was the second super-Earth to have both its mass and radius measured[1] and is the first of a new class of planets with small size and relatively low density.[9] GJ 1214 b is also significant because its parent star is relatively near the Sun and because it transits that parent star, which allows the planet's atmosphere to be studied using spectroscopic methods.[1]
+            
+            In December 2013, NASA reported that clouds may have been detected in the atmosphere of GJ 1214 b</p>
+        <blockquote>"GJ 1214 b is a Neptune-like exoplanet that orbits an M-type star. Its mass is 8.17 Earths, it takes 1.6 days to complete one orbit of its star, and is 0.0149 AU from its star. Its discovery was announced in 2009." <br><b>- NASA</b></blockquote>
     </div>
     <div class="exo-one">
-        <h3>Exoplanet 1 <b>Kepler-138 c</b></h3>
-        <img src="https://eyes.nasa.gov/apps/exo/assets/image/thumbnail/exoplanet/superearth.webp" alt="kepler">
-        <p>Kepler-138, also known as KOI-314, is a red dwarf located in the constellation Lyra, <b>219 light years from
-                Earth</b>. It is located within the field of vision of the Kepler spacecraft, the satellite that NASA's
-            Kepler Mission used to detect planets transiting their stars. The star hosts <mark> three confirmed planets
-                and a likely fourth</mark>, including the lowest-mass exoplanet with a measured mass and size discovered
-            to date, Kepler-138b, with a mass comparable to that of Mars. Kepler-138d is remarkable for its low density;
-            initially thought likely to be a gas dwarf,[8] more recent observations as of 2022 show that it, as well as
-            planet c, are likely to be ocean worlds.</p>
-        <blockquote>"Kepler-138 c is a super Earth exoplanet that orbits an M-type star. Its mass is 2.3 Earths, it
-            takes 13.8 days to complete one orbit of its star, and is 0.0913 AU from its star. Its discovery was
-            announced in 2014." <br><b>- NASA</b></blockquote>
+        <h3>Exoplanet 4 <b>51 Pegasi b</b></h3>
+        <img class="img-right" src="https://eyes.nasa.gov/apps/exo/assets/image/thumbnail/exoplanet/superearth.webp" alt="kepler">
+        <p>51 Pegasi is the Flamsteed designation of the host star. The planet was originally designated 51 Pegasi b by Michel Mayor and Didier Queloz, who discovered the planet in 1995. The following year it was unofficially dubbed "Bellerophon" /bɛˈlɛrəfɒn/ by astronomer Geoffrey Marcy, who followed the convention of naming planets after Greek and Roman mythological figures (Bellerophon is a figure from Greek mythology who rode the winged horse Pegasus).[6]
+
+            In July 2014, the International Astronomical Union launched NameExoWorlds, a process for giving proper names to certain exoplanets and their host stars.[7] The process involved public nomination and voting for the new names.[8] In December 2015, the IAU announced the winning name for this planet was Dimidium.[9] The name was submitted by the Astronomische Gesellschaft Luzern (German for 'Astronomical Society of Lucerne'), Switzerland. 'Dimidium' is Latin for 'half', referring to the planet's mass of approximately half the mass of Jupiter.</p>
+        <blockquote>"51 Pegasi b is a gas giant exoplanet that orbits a G-type star. Its mass is 0.46 Jupiters, it takes 4.2 days to complete one orbit of its star, and is 0.0527 AU from its star. Its discovery was announced in 1995." <br> <b>- NASA</b></blockquote>
     </div>
     <div class="exo-one">
-        <h3>Exoplanet 1 <b>Kepler-138 c</b></h3>
-        <img src="https://eyes.nasa.gov/apps/exo/assets/image/thumbnail/exoplanet/superearth.webp" alt="kepler">
-        <p>Kepler-138, also known as KOI-314, is a red dwarf located in the constellation Lyra, <b>219 light years from
-                Earth</b>. It is located within the field of vision of the Kepler spacecraft, the satellite that NASA's
-            Kepler Mission used to detect planets transiting their stars. The star hosts <mark> three confirmed planets
-                and a likely fourth</mark>, including the lowest-mass exoplanet with a measured mass and size discovered
-            to date, Kepler-138b, with a mass comparable to that of Mars. Kepler-138d is remarkable for its low density;
-            initially thought likely to be a gas dwarf,[8] more recent observations as of 2022 show that it, as well as
-            planet c, are likely to be ocean worlds.</p>
-        <blockquote>"Kepler-138 c is a super Earth exoplanet that orbits an M-type star. Its mass is 2.3 Earths, it
-            takes 13.8 days to complete one orbit of its star, and is 0.0913 AU from its star. Its discovery was
-            announced in 2014." <br> <b>- NASA</b></blockquote>
+        <h3>Some video content</h3>
+    <video autoplay loop>
+        <source src="https://cdn.pixabay.com/video/2024/06/09/216038_large.mp4" >
+    </video>
+    <p>This is the video taken from the pixabay which shows an exoplanet with water content in it. An exoplanet or extrasolar planet is a planet outside the Solar System. The first possible evidence of an exoplanet was noted in 1917 but was not then recognized as such. The first confirmation of the detection occurred in 1992. A different planet, first detected in 1988, was confirmed in 2003. According to statistics from the NASA Exoplanet Archive, As of 19 September 2024, there are 5,759 confirmed exoplanets in 4,300 planetary systems, with 963 systems having more than one planet.[3][4] The James Webb Space Telescope (JWST) is expected to discover more exoplanets, and to give more insight into their traits, such as their composition, environmental conditions, and potential for life. There are many methods of detecting exoplanets. Transit photometry and Doppler spectroscopy have found the most, but these methods suffer from a clear observational bias favoring the detection of planets near the star; thus, 85% of the exoplanets detected are inside the tidal locking zone.[6] In several cases, multiple planets have been observed around a star.[7] About 1 in 5 Sun-like stars[a] have an "Earth-sized"[b] planet in the habitable zone.[c][8][9] Assuming there are 200 billion stars in the Milky Way,[d] it can be hypothesized that there are 11 billion potentially habitable Earth-sized planets in the Milky Way, rising to 40 billion if planets orbiting the numerous red dwarfs are included.</p><br>
     </div>
+    <footer>
+        <p style="text-align: center;">@developed by Aluru Bala Karthikeya</p>
+    </footer>
 </body>
 </html>
